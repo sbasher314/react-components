@@ -5,9 +5,13 @@ let App = () => (
 
 let GroceryList = () => (
   <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
+    <GroceryListItem item="Cucumber" />
+    <GroceryListItem item="Kale" />
   </ul>
+);
+
+let GroceryListItem = (props) => (
+  <li>{props.item}</li>
 );
 
 ReactDOM.render(<GroceryList />, document.getElementById("app"));
